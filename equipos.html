@@ -44,12 +44,16 @@
       var equipos = jsonObj['equipos'];
       for(var i = 0; i < equipos.length; i++) {
         var myArticle = document.createElement('article');
+        var myEscudo = document.createElement('img');
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
         var myList = document.createElement('ul');
+        
+        myEscudo.src = equipos[i].escudo;
+        myEscudo.height = "100"
         myH2.textContent = equipos[i].nombre;
         myPara1.textContent = 'Fundacion: ' + equipos[i].fundacion;
         myPara2.textContent = 'Estadio: ' + equipos[i].estadio;
@@ -61,6 +65,7 @@
           listItem.textContent = titulos[j];
           myList.appendChild(listItem);
         }
+        myArticle.appendChild(myEscudo);
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);

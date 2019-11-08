@@ -4,6 +4,7 @@
   "active": true,
   "equipos": [
     {
+      "escudo": "boca.png",
       "nombre": "Boca Juniors",
       "fundacion": 1905,
       "estadio": "Alberto José Armando",
@@ -19,6 +20,7 @@
       ]
     },
     {
+      "escudo": "cai.png",
       "nombre": "Independiente",
       "fundacion": 1904,
       "cantidad": 18,
@@ -34,6 +36,7 @@
       ]
     },
     {
+      "escudo": "river.png",
       "nombre": "River Plate",
       "fundacion": 1901,
       "cantidad": 12,
